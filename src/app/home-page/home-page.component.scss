@@ -267,3 +267,13 @@ span {
     margin-bottom: 16px;
   }
 }
+
+@media screen and (max-width: 412px){
+  .button-8-wrapper {
+    padding-top: 15%;
+  }
+
+  .content {
+    padding-top: 15%;
+  }
+}

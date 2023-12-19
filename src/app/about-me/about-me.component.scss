@@ -160,41 +160,19 @@ span {
   line-height: 44px;
   text-align: center;
 }
-h1 { color: #c9d0d4; font-family: 'Helvetica Neue', sans-serif; font-size: 46px; font-weight: 100; line-height: 50px; letter-spacing: 1px; padding: 0 0 40px; border-bottom: double #555; }
+h1 {
+  color: #c9d0d4;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 46px;
+  font-weight: 100;
+  line-height: 50px;
+  letter-spacing: 1px;
+  padding: 0 0 40px;
+  border-bottom: double #555;
+}
 
-/* Existing CSS */
-//
-//@media only screen and (max-width: 768px) {
-//  .toolbar {
-//    height: auto;
-//    flex-direction: column;
-//    text-align: center;
-//  }
-//
-//  .toolbar img {
-//    margin: 16px 0;
-//  }
-//
-//  .button-8 {
-//    display: block;
-//    margin-bottom: 8px;
-//  }
-//
-//  .content {
-//    margin: 16px;
-//  }
-//
-//  .teacher-photo img {
-//    padding: 5px;
-//  }
-//
-//  h1 {
-//    font-size: 36px;
-//    line-height: 40px;
-//    padding: 0 0 20px;
-//  }
-//}
-@media screen and (max-width: 767px) {
+
+@media screen and (max-width: 600px) {
   .logo {
     width: 120px;
     height: 50px;
@@ -206,6 +184,7 @@ h1 { color: #c9d0d4; font-family: 'Helvetica Neue', sans-serif; font-size: 46px;
 
   .button-8 {
     padding: 8px 0.4em;
+    text-align: center;
   }
 
   .teacher-photo {
@@ -217,9 +196,24 @@ h1 { color: #c9d0d4; font-family: 'Helvetica Neue', sans-serif; font-size: 46px;
     margin-right: 0;
     margin-bottom: 16px;
   }
+
   h1 {
     font-size: 36px;
     line-height: 40px;
     padding: 0 0 20px;
   }
+}
+
+@media screen and (max-width: 412px) {
+  h1 {
+    font-size: 36px;
+    line-height: 40px;
+    padding: 0 0 20px;
+    padding-top: 20%;
+  }
+
+  .button-8-wrapper {
+    padding-top: 15%;
+  }
+
 }
