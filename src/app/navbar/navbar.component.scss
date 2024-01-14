@@ -1,0 +1,32 @@
+.toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  color: white;
+  font-weight: 600;
+}
+.toolbar-title {
+  color: #004d85;
+  font-family: 'Droid serif', serif;
+  font-size: 36px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 44px;
+  margin: 2 0 12px;
+  text-align: center;
+}
+
+.spacer {
+  flex: 1;
+}
+
+@media screen and (max-width: 412px) {
+  .button-8-wrapper {
+    padding-top: 15%;
+  }
+}
