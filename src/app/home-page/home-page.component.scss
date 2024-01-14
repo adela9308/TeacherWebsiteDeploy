@@ -199,7 +199,7 @@ a:hover {
 
 .content {
   display: flex;
-  margin: 82px auto 32px;
+  margin: 82px auto 32px;;
   padding: 0 16px;
   max-width: 960px;
   flex-direction: column;
@@ -243,18 +243,14 @@ span {
   text-align: center;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   .logo {
     width: 120px;
     height: 50px;
   }
 
-  .toolbar-title {
-    font-size: 20px;
-  }
-
-  .button-8 {
-    padding: 8px 0.4em;
+  .content {
+    padding-top: 10%;
   }
 
   .teacher-photo {
@@ -266,14 +262,34 @@ span {
     margin-right: 0;
     margin-bottom: 16px;
   }
+
+  span {
+    font-size: 17px;
+    line-height: 30px;
+  }
 }
 
-@media screen and (max-width: 412px){
-  .button-8-wrapper {
-    padding-top: 15%;
-  }
-
+@media screen and (max-width: 380px){
   .content {
     padding-top: 15%;
   }
+
+  span {
+    font-size: 15px;
+    line-height: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .teacher-photo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+
+  .teacher-image {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+
 }

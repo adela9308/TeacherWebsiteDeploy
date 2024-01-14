@@ -10,6 +10,7 @@
   color: white;
   font-weight: 600;
 }
+
 .toolbar-title {
   color: #004d85;
   font-family: 'Droid serif', serif;
@@ -20,13 +21,139 @@
   margin: 2 0 12px;
   text-align: center;
 }
+.toolbar img {
+  margin: 0 16px;
+}
+.toolbar {
+  position: absolute; left: 10px; top: 10px;
+}
 
 .spacer {
   flex: 1;
 }
 
-@media screen and (max-width: 412px) {
-  .button-8-wrapper {
-    padding-top: 15%;
+.button-8 {
+  background-color: #e1ecf4;
+  border-radius: 3px;
+  border: 2px solid #7aa7c7;
+  box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
+  box-sizing: border-box;
+  color: #004d85;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.15385;
+  margin: 1px;
+  outline: none;
+  padding: 8px .8em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: baseline;
+  white-space: nowrap;
+}
+
+.button-8:hover,
+.button-8:focus {
+  background-color: #b3d3ea;
+  color: #2c5777;
+}
+
+.button-8:focus {
+  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
+}
+
+.button-8:active {
+  background-color: #a0c7e4;
+  box-shadow: none;
+  color: #2c5777;
+}
+
+
+
+/* Tablet and smaller devices (screens less than 768px) */
+@media (max-width: 768px) {
+  .toolbar img {
+    padding-left: 180px;
   }
+
+  .toolbar {
+    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+  }
+
+  .toolbar-title {
+    font-size: 22px; /* Adjust the title size for smaller screens */
+    line-height: 20px;
+  }
+
+  .button-8-wrapper {
+    flex-basis: 100%; /* Allow the button wrapper to take full width */
+    display: flex;
+    justify-content: center; /* Center the buttons */
+  }
+
+  .button-8 {
+    margin-right: 10px; /* Adjust margin for the buttons */
+  }
+}
+
+@media (min-width: 380px) and (max-width:768px) {
+  .toolbar img {
+    width: 120px; /* Adjust the logo size for smaller screens */
+    height: auto;
+  }
+
+  .toolbar-title {
+    font-size: 25px; /* Adjust the title size for smaller screens */
+    line-height: 20px;
+  }
+
+  .button-8 {
+    font-size: 15px; /* Smaller font size for smaller screens */
+  }
+}
+
+@media (min-width: 600px) and (max-width:700px) {
+  .toolbar img {
+    padding-left: 130px;
+  }
+}
+
+@media (min-width: 500px) and (max-width:600px) {
+  .toolbar img {
+    padding-left: 90px;
+  }
+}
+
+@media (min-width: 380px) and (max-width:500px) {
+  .toolbar img {
+    padding-left: 50px;
+  }
+  .button-8 {
+    font-size: 11px; /* Smaller font size for smaller screens */
+  }
+}
+/* Mobile devices (screens less than 480px) */
+@media (max-width: 380px) {
+  .toolbar img {
+    padding-left: 20px;
+    width: 120px; /* Adjust the logo size for smaller screens */
+    height: auto;
+  }
+
+  .toolbar-title {
+    font-size: 22px; /* Adjust the title size for smaller screens */
+    line-height: 20px;
+  }
+
+  .button-8 {
+    font-size: 11px; /* Smaller font size for smaller screens */
+    margin-right: 7px;
+  }
+
 }

@@ -14,4 +14,19 @@ export class HomePageComponent {
   redirectToPage(link: string){
     this.router.navigateByUrl(link)
   }
+
+  toggleMenu() {
+    console.log("Here")
+    var menu = document.getElementById("navbarMenu");
+    // @ts-ignore
+    if (menu.style.display === "block") {
+      console.log("Here block")
+      // @ts-ignore
+      menu.style.display = "none";
+    } else {
+      console.log("Here")
+      // @ts-ignore
+      menu.style.display = "block";
+    }
+  }
 }

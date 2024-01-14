@@ -24,28 +24,6 @@ p {
   flex: 1;
 }
 
-.toolbar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  background-color: #ffffff;
-  color: white;
-  font-weight: 600;
-}
-.toolbar-title {
-  color: #004d85;
-  font-family: 'Droid serif', serif;
-  font-size: 36px;
-  font-weight: 400;
-  font-style: italic;
-  line-height: 44px;
-  margin: 2 0 12px;
-  text-align: center;
-}
 .container {
   display: inline-block;
 }
@@ -66,54 +44,7 @@ p {
 //  //display: inline-block;
 //  vertical-align: top;
 //}
-.button-8 {
-  background-color: #e1ecf4;
-  border-radius: 3px;
-  border: 2px solid #7aa7c7;
-  box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
-  box-sizing: border-box;
-  color: #004d85;
-  cursor: pointer;
-  display: inline-block;
-  font-family: -apple-system,system-ui,"Segoe UI","Liberation Sans",sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 1.15385;
-  margin: 1px;
-  outline: none;
-  padding: 8px .8em;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: baseline;
-  white-space: nowrap;
-}
 
-.button-8:hover,
-.button-8:focus {
-  background-color: #b3d3ea;
-  color: #2c5777;
-}
-
-.button-8:focus {
-  box-shadow: 0 0 0 4px rgba(0, 149, 255, .15);
-}
-
-.button-8:active {
-  background-color: #a0c7e4;
-  box-shadow: none;
-  color: #2c5777;
-}
-
-.toolbar img {
-  margin: 0 16px;
-}
-.toolbar {
-  position: absolute; left: 10px; top: 10px;
-}
 
 .content {
   display: flex;
@@ -155,36 +86,63 @@ p {
 span {
   font-family: 'Muli', sans-serif; ;
   //font-family:  'Open Sans', sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   line-height: 44px;
   text-align: center;
 }
 h1 {
-  color: #c9d0d4;
+  color: #004d85;
   font-family: 'Helvetica Neue', sans-serif;
   font-size: 46px;
   font-weight: 100;
   line-height: 50px;
   letter-spacing: 1px;
-  padding: 0 0 40px;
+  padding: 0 0 10px;
   border-bottom: double #555;
 }
 
 
-@media screen and (max-width: 600px) {
+//@media screen and (max-width: 600px) {
+//  .logo {
+//    width: 120px;
+//    height: 50px;
+//  }
+//
+//  .teacher-photo {
+//    flex-direction: column;
+//    text-align: center;
+//  }
+//
+//  .teacher-image {
+//    margin-right: 0;
+//    margin-bottom: 16px;
+//  }
+//
+//  h1 {
+//    font-size: 36px;
+//    line-height: 40px;
+//    padding: 0 0 20px;
+//  }
+//}
+//
+//@media screen and (max-width: 412px) {
+//  h1 {
+//    font-size: 36px;
+//    line-height: 40px;
+//    padding: 0 0 20px;
+//    padding-top: 20%;
+//  }
+//}
+
+@media screen and (max-width: 920px) {
   .logo {
     width: 120px;
     height: 50px;
   }
 
-  .toolbar-title {
-    font-size: 20px;
-  }
-
-  .button-8 {
-    padding: 8px 0.4em;
-    text-align: center;
+  .content {
+    padding-top: 10%;
   }
 
   .teacher-photo {
@@ -197,23 +155,47 @@ h1 {
     margin-bottom: 16px;
   }
 
+  span {
+    margin-left: 20px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+}
+
+@media screen and (max-width: 770px){
   h1 {
-    font-size: 36px;
+    font-size: 30px;
     line-height: 40px;
-    padding: 0 0 20px;
+    padding: 20px 0 20px;
   }
 }
 
-@media screen and (max-width: 412px) {
-  h1 {
-    font-size: 36px;
-    line-height: 40px;
-    padding: 0 0 20px;
-    padding-top: 20%;
-  }
-
-  .button-8-wrapper {
+@media screen and (max-width: 380px){
+  .content {
     padding-top: 15%;
   }
 
+  span {
+    font-size: 15px;
+    line-height: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .teacher-photo {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .teacher-image {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+
+    h1 {
+      font-size: 30px;
+      line-height: 40px;
+      padding: 20px 0 20px;
+    }
 }

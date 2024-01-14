@@ -1,19 +1,5 @@
-<!-- Toolbar -->
 <header>
-  <div class="toolbar" role="banner">
-    <a (click)="redirectToPage('/home')">
-      <img src="./assets/UniversityLogo.png" alt="University logo" width="160" height="70">
-    </a>
-    <h2 class="toolbar-title">Hudrea Tara</h2>
-    <div class="spacer"></div>
-
-    <div class="button-8-wrapper">
-      <button class="button-8" role="button" (click)="redirectToPage('/home')">HOME</button>
-      <button class="button-8" role="button" (click)="redirectToPage('')">TEACHING</button>
-      <button class="button-8" role="button" (click)="redirectToPage('aboutMe')">ABOUT ME</button>
-      <!--    <button class="button-8" role="button" (click)="redirectToPage('')">ANNOUNCEMENTS</button>-->
-    </div>
-  </div>
+  <app-navbar></app-navbar>
 </header>
 
 <main>
@@ -21,9 +7,6 @@
     <div class="teacher-photo">
       <img class="teacher-image" src="./assets/TeacherPhoto.jpg" alt="Teacher Photo" width="300" height="500">
       <span>Hi there! I am Hudrea Tara, Associate Professor at the Faculty of Mathematics and Computer Science - Department of Computer Science - at "Babeș-Bolyai" University.
-        <!--      <u> Contact info: </u>-->
-        <!--      tara.hudrea@stud.ubbcluj.ro-->
-        <!--      Office No. 406, Teodor Mihali Street (former Nicolae Pascaly Street), No.58-60, 400591, Cluj Napoca, Romania-->
     </span>
     </div>
   </div>
@@ -33,12 +16,12 @@
   <div>
     <!-- Links -->
     <div class="card-container">
-      <a class="circle-link" title="Find a Local Meetup" href="https://github.com/dashboard" target="_blank" rel="noopener">
-        <img src="./assets/GithubLogo.png" alt="Github logo" width="38" height="38">
+      <a class="circle-link" title="GitHub page" href="https://github.com/adela9308" target="_blank" rel="noopener">
+        <img src="./assets/GithubLogo.jpg" alt="Github logo" width="38" height="38">
       </a>
 
-      <a class="circle-link" title="Join the Conversation on Discord" href="https://www.linkedin.com/in/tara-hudrea-401a77140/" target="_blank" rel="noopener">
-        <img src="./assets/LinkedInLogo.png.webp" alt="LinkedIn logo" width="39" height="39">
+      <a class="circle-link" title="LinkedIn page" href="https://www.linkedin.com/in/tara-hudrea-401a77140/" target="_blank" rel="noopener">
+        <img src="./assets/LinkedInLogo.jpg" alt="LinkedIn logo" width="39" height="39">
       </a>
     </div>
   </div>

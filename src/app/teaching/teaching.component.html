@@ -1,0 +1,28 @@
+<header>
+  <app-navbar></app-navbar>
+</header>
+
+<main>
+  <div class="content" role="main">
+    <h1> Subjects </h1>
+    <br>
+    <span>
+      Explore the core of software development with Object-Oriented Programming. Master programming fundamentals for a solid foundation in code creation.
+    </span>
+
+    <br><br>
+
+    <div class="courses-container">
+      <div class="course-card" *ngFor="let course of courses">
+        <img src="{{ course.icon }}" alt="{{ course.name }}" class="course-icon">
+        <h3>{{ course.name }}</h3>
+        <!--        <p>{{ course.description }}</p>-->
+        <div class="button-container">
+          <button class="button-8">Course Infos</button>
+          <button class="button-8">Laboratory Infos</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>
