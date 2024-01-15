@@ -207,8 +207,8 @@ a:hover {
 }
 
 .teacher-photo {
-  display: flex; /* Use flex to align image and span horizontally */
-  align-items: center; /* Align items vertically in the center */
+  display: flex;
+  align-items: center;
 }
 
 .teacher-photo img {
@@ -231,7 +231,7 @@ a:hover {
 }
 
 .teacher-image {
-  margin-right: 10px; /* Adjust the margin as needed */
+  margin-right: 10px;
 }
 
 span {

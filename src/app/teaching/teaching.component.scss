@@ -37,7 +37,7 @@ h1 {
 .course-card {
   background: #7aa7c7;
   border-radius: 10px;
-  padding: 35px; // TODO - change this to modify dimension
+  padding: 35px;
   width: 500px;
   color: #004d85;
   text-align: center;
@@ -148,7 +148,7 @@ span {
 
 @media screen and (max-width: 770px){
   .course-card {
-    padding: 10px; // TODO - change this to modify dimension
+    padding: 10px;
     width: 400px;
   }
   .button-8 {
@@ -161,7 +161,7 @@ span {
 
 @media screen and (max-width: 450px){
   .course-card {
-    padding: 5px; // TODO - change this to modify dimension
+    padding: 5px;
     width: 250px;
   }
   .button-8 {

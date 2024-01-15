@@ -27,23 +27,6 @@ p {
 .container {
   display: inline-block;
 }
-//.teacher-image {
-//  //display: inline-block;
-//  //margin-bottom: 40px;
-//  //margin-left: 10px;
-//  vertical-align: middle;
-//  //display: inline-block;
-//}
-//span {
-//  font-family: Comic Sans MS, Comic Sans, cursive;
-//  font-size: 25px;
-//  font-weight: 400;
-//  font-style: italic;
-//  line-height: 44px;
-//  text-align: center;
-//  //display: inline-block;
-//  vertical-align: top;
-//}
 
 
 .content {
@@ -56,8 +39,8 @@ p {
 }
 
 .teacher-photo {
-  display: flex; /* Use flex to align image and span horizontally */
-  align-items: center; /* Align items vertically in the center */
+  display: flex;
+  align-items: center;
 }
 
 .teacher-photo img {
@@ -80,7 +63,7 @@ p {
 }
 
 .teacher-image {
-  margin-right: 10px; /* Adjust the margin as needed */
+  margin-right: 10px;
 }
 
 span {
@@ -102,38 +85,6 @@ h1 {
   border-bottom: double #555;
 }
 
-
-//@media screen and (max-width: 600px) {
-//  .logo {
-//    width: 120px;
-//    height: 50px;
-//  }
-//
-//  .teacher-photo {
-//    flex-direction: column;
-//    text-align: center;
-//  }
-//
-//  .teacher-image {
-//    margin-right: 0;
-//    margin-bottom: 16px;
-//  }
-//
-//  h1 {
-//    font-size: 36px;
-//    line-height: 40px;
-//    padding: 0 0 20px;
-//  }
-//}
-//
-//@media screen and (max-width: 412px) {
-//  h1 {
-//    font-size: 36px;
-//    line-height: 40px;
-//    padding: 0 0 20px;
-//    padding-top: 20%;
-//  }
-//}
 
 @media screen and (max-width: 920px) {
   .logo {

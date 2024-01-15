@@ -29,7 +29,7 @@ h1 {
 
 
 .info-container {
-  max-width: 600px; /* adjust as necessary */
+  max-width: 600px;
   margin: 0 auto;
 }
 
@@ -37,16 +37,16 @@ h1 {
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px; /* space between cards */
+  margin-bottom: 20px;
   padding: 13px;
-  border: 1px solid #ccc; /* subtle border */
+  border: 1px solid #ccc;
 }
 
 .info-title {
   color: #333;
   font-size: 20px;
   margin-bottom: 2px;
-  text-transform: uppercase; /* stylistic choice */
+  text-transform: uppercase;
 }
 
 .info-content {
@@ -55,7 +55,7 @@ h1 {
 }
 
 .info-icon {
-  font-size: 24px; /* icon size */
+  font-size: 24px;
   color: #555;
   margin-right: 10px;
 }
@@ -73,7 +73,7 @@ h1 {
   stroke: currentColor;
   fill: currentColor;
 
-  font-size: 13px; /* icon size */
+  font-size: 13px;
   color: #555;
   margin-right: 10px;
 }

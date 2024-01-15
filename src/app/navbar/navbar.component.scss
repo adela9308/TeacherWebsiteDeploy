@@ -75,46 +75,44 @@
 }
 
 
-
-/* Tablet and smaller devices (screens less than 768px) */
 @media (max-width: 768px) {
   .toolbar img {
     padding-left: 180px;
   }
 
   .toolbar {
-    flex-wrap: wrap; /* Allow items to wrap onto the next line */
+    flex-wrap: wrap;
   }
 
   .toolbar-title {
-    font-size: 22px; /* Adjust the title size for smaller screens */
+    font-size: 22px;
     line-height: 20px;
   }
 
   .button-8-wrapper {
-    flex-basis: 100%; /* Allow the button wrapper to take full width */
+    flex-basis: 100%;
     display: flex;
-    justify-content: center; /* Center the buttons */
+    justify-content: center;
   }
 
   .button-8 {
-    margin-right: 10px; /* Adjust margin for the buttons */
+    margin-right: 10px;
   }
 }
 
 @media (min-width: 380px) and (max-width:768px) {
   .toolbar img {
-    width: 120px; /* Adjust the logo size for smaller screens */
+    width: 120px;
     height: auto;
   }
 
   .toolbar-title {
-    font-size: 25px; /* Adjust the title size for smaller screens */
+    font-size: 25px;
     line-height: 20px;
   }
 
   .button-8 {
-    font-size: 15px; /* Smaller font size for smaller screens */
+    font-size: 15px;
   }
 }
 
@@ -135,24 +133,24 @@
     padding-left: 50px;
   }
   .button-8 {
-    font-size: 11px; /* Smaller font size for smaller screens */
+    font-size: 11px;
   }
 }
-/* Mobile devices (screens less than 480px) */
+
 @media (max-width: 380px) {
   .toolbar img {
     padding-left: 20px;
-    width: 120px; /* Adjust the logo size for smaller screens */
+    width: 120px;
     height: auto;
   }
 
   .toolbar-title {
-    font-size: 22px; /* Adjust the title size for smaller screens */
+    font-size: 22px;
     line-height: 20px;
   }
 
   .button-8 {
-    font-size: 11px; /* Smaller font size for smaller screens */
+    font-size: 11px;
     margin-right: 7px;
   }
 
