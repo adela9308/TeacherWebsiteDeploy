@@ -8,6 +8,7 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { TeachingComponent } from './teaching/teaching.component';
 import { ContactComponent } from './contact/contact.component';
+import { TimetableComponent } from './timetable/timetable.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { ContactComponent } from './contact/contact.component';
     HomePageComponent,
     NavbarComponent,
     TeachingComponent,
-    ContactComponent
+    ContactComponent,
+    TimetableComponent
   ],
   imports: [
     BrowserModule,

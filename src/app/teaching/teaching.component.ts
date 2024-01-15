@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-teaching',
@@ -17,4 +18,9 @@ export class TeachingComponent {
     }
   ];
 
+  constructor(private router: Router) {
+  }
+  redirectToPage(link: string){
+    this.router.navigateByUrl(link)
+  }
 }
